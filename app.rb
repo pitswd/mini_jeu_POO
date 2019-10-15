@@ -24,4 +24,3 @@ puts "Passons à la phase d'attaque !"
     player2.attacks(player1)
     puts "___________"
   end
-  
