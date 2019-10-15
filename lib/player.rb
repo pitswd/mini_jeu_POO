@@ -64,6 +64,9 @@ class HumanPlayer < Player
     health_pack = rand(1..6)
     if health_pack >= 2 && health_pack <= 5
       @hp += 50
+      if @hp >100
+        @hp = 100
+      end
       "Jolie trouvaille, un pack de vie +50 :)"
     elsif health_pack == 6
       @hp += 80
@@ -71,5 +74,9 @@ class HumanPlayer < Player
     else
       puts "Tu n'as rien trouvé déso :/"
     end
+    if @hp >100
+      @hp = 100
+    else
+    end 
   end
 end
